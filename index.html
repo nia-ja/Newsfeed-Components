@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./CSS/index.css" />
     <script src="./Menu/Menu.js" async></script>
     <script src="./Article/Article.js" async></script>
+    <script src="./Article/Form.js" async></script>
   </head>
   <body>
     <div class="header">
@@ -22,16 +23,15 @@
         <li>Log Out</li>
       </ul>
     </div>
+    <div class="create-article">
+      <h2>Create your own article</h2>
+      <form>
+        <input id="user-header" type='text' placeholder='Header' name='header' >
+        <textarea rows='20' cols='40' placeholder='Your text goes here...' name='text' id="user-article"></textarea>
+        <button class="submit">Submit</button>
+      </form>
+    </div>
     <div class="articles">
-      <div>
-        <h2>Create your own article</h2>
-        <form>
-          <label>Header:</label><br><input type="text" class="user-header"><br>
-          <label>Date:</label><br><input type="text" class="user-date"><br>
-          <label>Text:</label><br><textarea name="text" class="user-article" cols='20' rows="4"></textarea><br>
-          <button type='submit'>submit</button>
-        </form>
-      </div>
       <div class="article">
         <h2>Lambda School Students: "We're the best!"</h2>
         <p class="date">Nov 5th, 2017</p>

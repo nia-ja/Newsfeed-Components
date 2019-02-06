@@ -65,7 +65,7 @@
   display: block;
 }
 .articles {
-  margin-top: 95px;
+  margin-top: 25px;
 }
 .article {
   margin: 20px 10%;
@@ -102,6 +102,9 @@
   transform: translate(-50%);
   background-color: white;
 }
+.article .hidden {
+  display: none !important;
+}
 .article-open {
   height: 400px;
 }
@@ -111,4 +114,56 @@ body {
   padding: 0;
   font-family: 'Roboto';
   background-color: #fffef7;
+}
+
+.create-article {
+  margin: 95px 10% 20px 10%;
+  padding: 0 20px 25px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+
+.create-article h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #388E3C;
+  padding: 0;
+  margin: 15px 0;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form #user-header, form #user-article {
+  margin: 0 0 15px 0;
+  width: 90%;
+  border: 1px solid lightgrey;
+  border-radius: 5px; 
+}
+
+form .submit {
+  cursor: pointer;
+  width: 15%;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 5px;
+  border-radius: 5px;
+  color: #388E3C;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+
+form .submit:hover {
+  color: white;
+  background-color: #388E3C;
+  box-shadow: none;
+}
+
+form .submit:focus {
+  border: none;
 }

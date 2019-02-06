@@ -2,7 +2,6 @@
 
 class Article {
   constructor(article) {
-    console.log(article);
     // assign this.domElement to the passed in domElement
     this.article = article;
     // create a reference to the ".expandButton" class. 
@@ -42,37 +41,3 @@ class Article {
 
 let articles = document.querySelectorAll('.article');
 articles.forEach(article => new Article(article));
-
-
-
-
-
-// //Stretch: user can add his own articles using the form
-// let submitButton = document.querySelector('button');
-
-// submitButton.addEventListener('submit', event => {
-//   // let userArticle = document.querySelector('form');
-//   let userHeader = document.querySelector('.user-header');
-//   let userDate = document.querySelector('.user-date');
-//   let userText = document.querySelector('.user-article');
-
-//   const newArticle = document.createElement('div');
-//   newArticle.className = 'article';
-//   document.querySelector('.articles').appendChild(newArticle);
-//   const newHeader = document.createElement('h2');
-//   newHeader.textContent = userHeader.input;
-//   console.log(userHeader);
-//   newArticle.appendChild(newHeader);
-//   const newDate = document.createElement('p');
-//   newDate.className = 'date';
-//   newDate.textContent = userDate.input;
-//   newArticle.appendChild(newDate);
-//   const newText = document.createElement('p');
-//   newText.textContent = userText.input;
-//   newArticle.appendChild(newText);
-//   const newButton = document.createElement('span');
-//   newButton.className = 'expandButton';
-//   newArticle.appendChild(newButton);
-//   newHeader.textContent = userHeader.nodeValue;
-//   event.preventDefault();
-// });
